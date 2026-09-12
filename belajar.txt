@@ -1,0 +1,140 @@
+HTML
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana Saya</title>
+    <!-- CDN Font Awesome untuk Ikon/Simbol Gratis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-code"></i> WebSaya
+        </div>
+        <nav>
+            <a href="#"><i class="fa-solid fa-house"></i> Beranda</a>
+            <a href="#"><i class="fa-solid fa-user"></i> Tentang</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i> Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <div class="card">
+            <i class="fa-solid fa-rocket icon-large"></i>
+            <h2>Selamat Datang!</h2>
+            <p>Ini adalah website sederhana yang di-hosting secara gratis menggunakan GitHub Pages.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-thumbs-up icon-large"></i>
+            <h2>Fitur & Simbol</h2>
+            <p>Website ini menggunakan simbol gratis dari Font Awesome dan gaya desain CSS modern.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-globe icon-large"></i>
+            <h2>Domain Gratis</h2>
+            <p>Website ini menggunakan domain bawaan gratis dari GitHub <code>.github.io</code>.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dibuat dengan <i class="fa-solid fa-heart" style="color: red;"></i> oleh Saya</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+CSS
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Container & Cards */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.card {
+    background: white;
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.icon-large {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
